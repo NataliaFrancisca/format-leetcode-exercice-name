@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, input, button, label, p, h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    padding: 25px 20px;
+    color: #202020;
+
+    display: flex;
+    flex-direction: column;
+    border: solid #202020 2px;
+}
+
+.main-title{
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.main-title:before{
+    content: "";
+    height: 100%;
+    width: 6px;
+    border-radius: 4px;
+    background-color: orange;
+    position: absolute;
+    left: -8px;
+    margin-right: 20px;
+}
+
+.form{
+    padding: 18px 10px;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.form-group-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-error-input{
+    font-size: .9rem;
+    font-style: italic;
+    color: rgb(244, 20, 20);
+}
+
+.form-error-input.hidden{
+    display: none;
+}
+
+.form-error-input.visible{
+    display: flex;
+}
+
+.form-label{
+    font-size: .9rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.form-input{
+    padding: 8px;
+    font-size: 1.2em;
+    border-radius: 2px;
+    background-color: transparent;
+    border: solid #202020 2px;
+}
+
+.form-button{
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .6s ease;
+    border-radius: 2px;
+    border: solid #202020 2px;
+    background-color: orange;
+    color: #202020;
+}
+
+.form-button:hover{
+    transition: all .6s ease;
+    background-color: rgb(255, 207, 119);
+}
+
+.container-text-formated{
+    padding: 10px;
+    border-radius: 2px;
+    margin: 0 10px;
+    border: solid black 2px;
+}
+
+.container-text-formated__visible{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-text-formated__hidden{
+    display: none;
+}
+
+.text-formate-span{
+    font-size: 1.2rem;
+}
+
+.button-copy{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button-copy-svg{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+}
+
+.button-copy-svg:hover path{
+    fill: black;
+}
