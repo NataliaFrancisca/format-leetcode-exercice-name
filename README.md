@@ -1,4 +1,4 @@
-# 👩🏽‍💻 Formatação LeetCode Exercícios 
+# 👩🏽‍💻 Formatação Exercícios LeetCode
 
 Vai te ajudar na hora de formatar o nome dos arquivos de exercícios do LeetCode
 
